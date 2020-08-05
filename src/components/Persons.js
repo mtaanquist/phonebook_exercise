@@ -27,9 +27,11 @@ const Persons = ({ filter, persons, setPersons }) => {
         <div>
             {personsToShow.map(
                 person =>
-                    <Person key={person.id}
+                    <Person 
+                        key={person.id}
                         person={person}
-                        removePerson={removePerson} />
+                        removePerson={removePerson} 
+                    />
             )}
         </div>
     )
